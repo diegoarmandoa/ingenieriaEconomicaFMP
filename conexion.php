@@ -1,10 +1,10 @@
 <?php
     //mysql://root:@:7968/railway
-    $host = "containers-us-west-95.railway.app";
-    $user = "root";
-    $clave = "Xp7HReAzuUU9X5Itiwak";
-    $bd = "railway";
-    $port = 7968;
+    $host = $_ENV["DB_HOST"];
+    $user =  $_ENV["DB_USER"];
+    $clave =  $_ENV["DB_CLAVE"];
+    $bd =  $_ENV["DB_NAME"];
+    $port =  $_ENV["DB_PORT"];
 
     $conexion = mysqli_connect($host,$user,$clave,$bd,$port);
     if (mysqli_connect_errno()){
