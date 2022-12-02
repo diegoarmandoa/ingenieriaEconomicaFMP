@@ -1,5 +1,4 @@
 <?php 
-error_reporting(0);
 
 include_once "./includes/header.php";
 include "../conexion.php";
