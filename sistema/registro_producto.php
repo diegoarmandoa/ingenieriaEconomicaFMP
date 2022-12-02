@@ -1,4 +1,4 @@
- <?php include_once "includes/header.php";
+ <?php include "includes/header.php";
   include "../conexion.php";
   if (!empty($_POST)) {
     $alert = "";
